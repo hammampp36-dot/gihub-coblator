@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Collaboration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .header {
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: #8b949e;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 30px;
+            border-radius: 16px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #58a6ff;
+            box-shadow: 0 10px 30px #00000050;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #8b949e;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .card a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #6e7681;
+            margin-top: 35px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>GitHub Collaboration.</h1>
+            <p>
+                Build something amazing together.
+                Collaborate, share code, and create projects
+                with your development team.
+            </p>
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">🔀</div>
+                <h2>Pull Request</h2>
+                <p>
+                    Review code changes, discuss improvements,
+                    and merge contributions into your project.
+                </p>
+                <a href="https://github.com/pulls">
+                    Explore Pull Requests →
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="icon">👥</div>
+                <h2>Team Projects</h2>
+                <p>
+                    Work together with developers,
+                    manage repositories, and build projects
+                    as a team.
+                </p>
+                <a href="https://github.com/orgs">
+                    Explore Team Projects →
+                </a>
+            </div>
+
+        </section>
+
+        <footer>
+            Made for developers · Powered by collaboration
+        </footer>
+
+    </main>
+
+</body>
+</html>
